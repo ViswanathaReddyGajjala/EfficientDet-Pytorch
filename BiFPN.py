@@ -148,8 +148,8 @@ fpn = BiFPN([40, 112, 192, 192, 1280])
 c1 = torch.randn([1, 40, 64, 64])
 c2 = torch.randn([1, 112, 32, 32])
 c3 = torch.randn([1, 192, 16, 16])
-c4 = torch.randn([1, 192, 8, 8])
-c5 = torch.randn([1, 1280, 4, 4])
+c4 = torch.randn([1, 192, 16, 16])
+c5 = torch.randn([1, 1280, 16, 16])
 
 feats = [c1, c2, c3, c4, c5]
 output = fpn.forward(feats)
